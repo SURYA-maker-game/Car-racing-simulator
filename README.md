@@ -1,14 +1,21 @@
 # CAR RACING SIMULATOR
 
-A browser-based arcade racing game with a car garage, checkpoints, drifting, nitro, mini-map, achievements, and online room-based multiplayer.
+A browser-based multiplayer arcade racing game built with Node.js, Express, Socket.IO, HTML Canvas, CSS, and JavaScript.
 
 ## Run locally
+
 1. Install Node.js.
 2. Run `npm install`.
 3. Run `npm start`.
-4. Open http://localhost:3000
+4. Open `http://localhost:3000`.
+
+Enter the same room name in multiple browser tabs or devices to connect players to the same race room.
+
+## Controls
+
+- Arrow keys or WASD: steer and accelerate/brake
+- Space: nitro boost
 
 ## Deploy
-Push the project files to GitHub, then in Render choose **New + → Blueprint** and select this repository. Render reads `render.yaml`.
 
-Multiplayer uses Socket.IO room membership and live player position updates. This is a casual prototype, not a competitive server-authoritative racing system.
+The app uses Socket.IO and must be deployed as a Node.js server (for example, Render). A static-only host will not provide multiplayer connections.
